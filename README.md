@@ -59,4 +59,26 @@ Tic tac toe with modular programming allows two opponents
 to Play tic tac toe the game will take a classic zlooking approach
 using a two dimentional array the state of the game board will be stored and the algorithm will 
 have programmer defined class types
-traditionally the moves are categorized by rowas a
+traditionally the moves are categorized by rows and columns
+to develop an array that works for the computer to move against the opponent try 
+void Computer_moves(void)
+{
+    //Computer will make educated move between X and Y parameters for the array
+    int A, B;
+    //A will allow a move between 1 and 3 as will B 
+    for (A = 0; A < 3; A++) {
+        for (B = 0; B < 3; B++)
+            if (Array[A][B] == ' ') break;
+        if (Array[A][B] == ' ') break;
+    }
+
+    if (A * B == 9) {
+        //If all spots on array are filled and a winner has not been establish print "It's a DRAW PARTNER"
+        printf("It's a DRAW PARTNER\n");
+        //Exit game
+        exit(0);
+    }
+    else
+        Array[A][B] = 'O';
+this is more or less showing that the computer and opponent can tie, you will have to create aan array that works
+for you or does what you're looking for.

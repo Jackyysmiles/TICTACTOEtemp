@@ -26,7 +26,7 @@ int main(void)
     Init_Matrix();
    
 
-to give you an idea, I've provided a snipit of my overall code, to be successful 
+to give you an idea, I've provided a small portion of my overall code, to be successful 
 you will spend anywhere from 24-72 hours developing the code and fixing syntax errors. 
 Don't be discouraged if at first you don't succeed, every error I've encourtered has brought me closer
 to knowing how important knowing different tricks in coding can be. They are not errors, they are learning opportunities.
@@ -54,4 +54,9 @@ the a message will appear
 stating "I WON"
 end
 
-
+Tic tac toe with modular programming allows two opponents 
+(X and O)
+to Play tic tac toe the game will take a classic zlooking approach
+using a two dimentional array the state of the game board will be stored and the algorithm will 
+have programmer defined class types
+traditionally the moves are categorized by rowas a

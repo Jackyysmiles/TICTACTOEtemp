@@ -82,3 +82,57 @@ void Computer_moves(void)
         Array[A][B] = 'O';
 this is more or less showing that the computer and opponent can tie, you will have to create aan array that works
 for you or does what you're looking for.
+Since I am committed to keeping up with different portions of this class, we have updated 
+The user profile of this tic tac toe applications to include structs and unions
+C – Structures are arrays to define different types of variables that hold different sections of data at the same time.
+C allows structures to represent records because they use struct statements to define new data.
+C – Unions are similar to structures on how they define data types
+they provide a proficient way to efficiently use memory location 
+the way it is implemented into this application is a simple addition to the code
+/* Created a structure here. The name of the structure is
+ * StudData.
+ */
+struct StudData {
+    //Student Name
+    char* stud_name;
+    //Class number is ITT 310
+    int class_num;
+    //Display your age 
+    int stud_age;
+};
+int main(void)
+{
+    /* student is the variable of structure StudentData*/
+    struct StudData stud;
+
+    /*Assigning the values of each struct member here*/
+    stud.stud_name = "Jackelyn Pohlman";
+    stud.class_num = 310;
+  
+
+    /* Displaying the values of struct members */
+    printf("\nStudent Name: %s\n\n", stud.stud_name);
+    printf("\Grand Canyon Class ITT- %d\n", stud.class_num);
+   
+    
+    //data type designed for storage of letters
+    char done;
+//This portion of the code reserved for union data
+    union Data {
+        //float comp
+        //initiate player 
+        float Comp;
+        int Player;
+    } j;
+
+    {
+        j.Comp = 0;
+
+        j.Player = 0;
+        //Print message for Computer = 0 and Player =X
+        printf("\nComputer = %d\n", j.Comp);
+        printf("\nPlayer = X%d\n", j.Player);
+    }
+This displays both the requested information for the union and structs within the code. 
+Union was a bit trickier and could use more work. 
+But overall it was a functional code with little patching needed. 

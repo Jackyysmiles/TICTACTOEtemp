@@ -136,3 +136,34 @@ int main(void)
 This displays both the requested information for the union and structs within the code. 
 Union was a bit trickier and could use more work. 
 But overall it was a functional code with little patching needed. 
+Over the last couple of weeks we have implemented basic skills
+showing users how to make a functional Tic Tac Toe Code using C
+This code has input and output validation 
+secure programing features
+it included structs and unions 
+and BUFFER OVERFLOW protection by programming like this:
+void Player_move(void)
+{
+    //Moves are made on an X and Y plane
+    int x, y;
+    //Print message to ender X, and Y coordinates to establish move
+    printf("Enter X,Y coordinates for your move(X): ");
+   // Enter X coordinate, then hit enter
+    //Enter Y coordinate and press enter
+    //X will appear in the matrix
+    scanf_s("%d%*c%d", &x, &y);
+
+    x--; y--;
+    //X must be withing the Parameters of 1 and 3 for X and 1 and 3 for Y
+    if (Array[x][y] != ' ') {
+        //If outside the array position print message "Invalid move, please try again"
+        printf("Invalid move, Please try again.\n");
+        //Player makes move
+        Player_move();
+
+    }
+    else Array[x][y] = 'X';
+}
+to ensure users arent overwriting other squares that are currently occupied within the array
+or choosing numbers outside of the paramaters for it. 
+Thank you for you time and I hope you have enjoyed the program. 

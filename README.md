@@ -142,7 +142,8 @@ This code has input and output validation
 secure programing features
 it included structs and unions 
 and BUFFER OVERFLOW protection by programming like this:
-void Player_move(void)
+
+   void Player_move(void)
 {
     //Moves are made on an X and Y plane
     int x, y;
